@@ -1,0 +1,69 @@
+laba1=[*
+	sc_node_struct->section_subject_domain_of_polyclinik;;
+
+
+	section_subject_domain_of_polyclinik<=nrel_section_decomposition:{
+		section_subject_domain_of_childrens_polyclinik(*<-sc_node_struct;;*);
+		section_subject_domain_of_adult_polyclinik(*<-sc_node_struct;;*);	
+		section_subject_domain_of_outpatient_clinik(*<-sc_node_struct;;*);
+		section_subject_domain_of_student_polyclinik(*<-sc_node_struct;;*)
+	};;
+
+
+	section_subject_domain_of_polyclinik->rrel_key_sc_element:subject_domain_of_polyclinik(*<-sc_node_struct;;*);
+	concept_pacient(*<-sc_node_class;;*);
+	concept_doctor(*<-sc_node_class;;*);
+	concept_appointment(*<-sc_node_class;;*);
+	concept_patient_card(*<-sc_node_class;;*);
+        nrel_FIO(*<-sc_node_norole_relation;;*);
+        nrel_birthdate(*<-sc_node_norole_relation;;*);
+        nrel_region(*<-sc_node_norole_relation;;*);
+        nrel_medical_history(*<-sc_node_norole_relation;;*);
+        nrel_address(*<-sc_node_norole_relation;;*);
+    concept_reception(*<-sc_node_class;;*);;
+
+
+    section_subject_domain_of_polyclinik => nrel_main_idtf:
+       	[Раздел.Предметная область поликлиника]
+       	(* <- lang_ru;; *);;
+
+	section_subject_domain_of_polyclinik => nrel_main_idtf:
+		[Section.Subject domain of polyclinik]
+        	(* <- lang_en;; *);;
+    
+
+	concept_patient_card<-rrel_not_maximum_studied_object_class:subject_domain_of_polyclinik;;
+    
+	section_subject_domain_of_polyclinik<-non_atomic_section;;
+
+
+	subject_domain_of_polyclinik => nrel_main_idtf:
+        	[Предметная область поликлиника]
+        	(* <- lang_ru;; *);;
+    
+    subject_domain_of_polyclinik => nrel_main_idtf:
+       	[Subject domain of polyclinik]
+       	(* <- lang_en;; *);;
+
+
+    subject_domain_of_polyclinik=>nrel_private_subject_domain:
+	    subject_domain_of_childrens_polyclinik(*<-sc_node_struct;;*);
+       	subject_domain_of_adult_polyclinik(*<-sc_node_struct;;*);
+       	subject_domain_of_outpatient_clinik(*<-sc_node_struct;;*);
+	    subject_domain_of_student_polyclinik(*<-sc_node_struct;;*);;
+
+
+	subject_domain_of_polyclinik<=nrel_private_subject_domain:subject_domain_of_healthcare(*<-sc_node_struct;;*);;
+
+    subject_domain_of_polyclinik->rrel_maximum_studied_object_class:concept_appointment;;
+    
+    
+    subject_domain_of_polyclinik->rrel_explored_relation:
+        nrel_FIO;
+        nrel_birthdate;
+        nrel_region;
+        nrel_medical_history;
+        nrel_address;;
+
+    subject_domain_of_polyclinik<-subject_domain;;
+*];;	
