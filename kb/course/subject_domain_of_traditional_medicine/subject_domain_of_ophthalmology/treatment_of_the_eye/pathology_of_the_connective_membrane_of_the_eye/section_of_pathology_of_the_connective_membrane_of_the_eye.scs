@@ -1,0 +1,373 @@
+xerophthalmia
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [ксерофтальмия]
+            (*<-lang_ru;;*);
+          [xerophthalmia]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (ксерофтальмия)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Xerophthalmia_idtf.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+                 <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/xerophthalmia.jpeg"
+             (*
+                 => nrel_format: format_jpeg;;
+             *);;
+         *);;
+        *);;
+
+xerophthalmia=> nrel_symptom: "file://html_con_membrane/Xerophthalmia_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+             
+xerophthalmia
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (ксерофтальмия)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Xerophthalmia_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;   
+conjunctivitis        
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [конъюнктивит]
+            (*<-lang_ru;;*);
+          [conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Conjunctivitis_idtf.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+                 <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/conjunctivitis.jpg"
+             (*
+                 => nrel_format: format_jpg;;
+             *);;
+         *);;
+        *);
+=>nrel_inclusion:
+    bacterial_conjunctivitis;
+    viral_conjunctivitis;
+    allergic_conjunctivitis;
+    non_infectious_conjunctivitis;
+    giant_papillary_conjunctivitis;;
+
+conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*        
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (Заражение конъюнктивитом)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Conjunctivitis_statement_2.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;   
+
+conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;  
+bacterial_conjunctivitis
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [бактериальный конъюнктивит]
+            (*<-lang_ru;;*);
+          [bacterial conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (бактериальный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Bacterial_conjunctivitis.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+                 <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/bacterial_conjunctivitis.jpg"
+             (*
+                 => nrel_format: format_jpg;;
+             *);;
+         *);;
+        *);;
+
+
+             
+bacterial_conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (бактериальный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Bacterial_conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;
+bacterial_conjunctivitis=> nrel_symptom: "file://html_con_membrane/Bacterial_conjunctivitis_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+
+viral_conjunctivitis
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [вирусный конъюнктивит]
+            (*<-lang_ru;;*);
+          [viral conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (вирусный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Viral_conjunctivitis.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+                 <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/viral_conjunctivitis.jpg"
+             (*
+                 => nrel_format: format_jpg;;
+             *);;
+         *);;
+        *);;
+
+
+             
+viral_conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (вирусный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Viral_conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;
+viral_conjunctivitis=> nrel_symptom: "file://html_con_membrane/Viral_conjunctivitis_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+allergic_conjunctivitis
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [аллергический конъюнктивит]
+            (*<-lang_ru;;*);
+          [allergic conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (аллергический конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Allergic_conjunctivitis.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+                 <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/allergic_conjunctivitis.jpg"
+             (*
+                 => nrel_format: format_jpg;;
+             *);;
+         *);;
+        *);;
+
+
+             
+allergic_conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (аллергический конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Allergic_conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;
+allergic_conjunctivitis=> nrel_symptom: "file://html_con_membrane/Allergic_conjunctivitis_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+non_infectious_conjunctivitis
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [неинфекционный конъюнктивит]
+            (*<-lang_ru;;*);
+          [non-infectious conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (неинфекционный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Non_infectious_conjunctivitis.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+
+
+             
+non_infectious_conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (неинфекционный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Non_infectious_conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;
+non_infectious_conjunctivitis=> nrel_symptom: "file://html_con_membrane/Non_infectious_conjunctivitis_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+giant_papillary_conjunctivitis
+<-sc_node_not_relation;
+    => nrel_main_idtf:
+          [гигантский папиллярный конъюнктивит]
+            (*<-lang_ru;;*);
+          [giant papillary conjunctivitis]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (гигантский папиллярный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Giant_papillary_conjunctivitis.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+            <- illustration;;
+         <= nrel_sc_text_translation: ... (*
+             -> rrel_example: "file://photo_membrane/giant_papillary_conjunctivitis.jpg"
+             (*
+                 => nrel_format: format_jpg;;
+             *);;
+         *);;
+        *);;
+
+
+             
+giant_papillary_conjunctivitis
+<- rrel_key_sc_element: ... 
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утв. (гигантский папиллярный конъюнктивит)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://html_con_membrane/Giant_papillary_conjunctivitis_lat.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        
+        *);
+<=nrel_disease:eye;;
+giant_papillary_conjunctivitis=> nrel_symptom: "file://html_con_membrane/Giant_papillary_conjunctivitis_symptoms.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
